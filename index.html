@@ -7,8 +7,10 @@
     <title>Projeto Android</title>
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="estilo/style.css">
+    
 </head>
 <body>
+    
             <!--HEADER-->
             <header>
                 <h1>Curiosidades de Tecnologia</h1>
@@ -19,8 +21,7 @@
         <nav>
             <a href="#">Home</a>
             <a href="#">Notícias</a>
-            <a href="#">Curiosidades</a>
-            <a href="#">Fale Conosco</a>
+            <a href="#">Contato</a>
         </nav>
 
         <main>
@@ -103,10 +104,40 @@
                     Então é isso! Espero que você tenha gostado do nosso artigo com essa curiosidade sobre o sistema <strong>Android</strong> e seu simpático mascote.
                 </p>    
             </article>
+
+            <form action="#">
+                <input type="submit" value="Voltar para o Topo">
+            </form>
+
+            <!-- Botão para o topo em JS
+            <button onclick="topFunction()" id="button-top" title="top">Topo</button>
+            -->
+
         </main>
                 
         <footer>
             Site criado por Filipi Brian para o <a href="http://www.youtube.com/CursoemVideo" target="_blank" rel="externo">CursoemVideo</a>.
         </footer>
+
+        <!--Botão para o topo em JS
+        <script>        
+            let mybutton = document.getElementById("button-top");
+
+                window.onscroll = function() {scrollFunction()};
+                    function scrollFunction() {
+                         if (document.body.scrollTop > 2000 || document.documentElement.scrollTop > 2000) {
+                            mybutton.style.display = "block";
+                        } else {
+                            mybutton.style.display = "none";
+                        }
+                }
+
+                function topFunction() {
+                    document.body.scrollTop = 0; 
+                document.documentElement.scrollTop = 0;
+                }
+        </script>
+            -->
+        
 </body>
 </html>
